@@ -7,18 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		176C31351D6404060040EC60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31341D6404060040EC60 /* main.m */; };
-		176C31381D6404060040EC60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31371D6404060040EC60 /* AppDelegate.m */; };
 		176C31411D6404060040EC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176C313F1D6404060040EC60 /* Main.storyboard */; };
 		176C31431D6404060040EC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176C31421D6404060040EC60 /* Assets.xcassets */; };
 		176C31461D6404060040EC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176C31441D6404060040EC60 /* LaunchScreen.storyboard */; };
 		176C31511D6404060040EC60 /* Zhang_tabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31501D6404060040EC60 /* Zhang_tabBarTests.m */; };
 		176C315C1D6404060040EC60 /* Zhang_tabBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C315B1D6404060040EC60 /* Zhang_tabBarUITests.m */; };
-		176C316B1D64043D0040EC60 /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C316A1D64043D0040EC60 /* CustomTabBarViewController.m */; };
-		176C316E1D640C3B0040EC60 /* zzwTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C316D1D640C3B0040EC60 /* zzwTabbar.m */; };
-		176C31711D640C9D0040EC60 /* zzwItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31701D640C9D0040EC60 /* zzwItemButton.m */; };
-		176C31741D643A710040EC60 /* zzwPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31731D643A710040EC60 /* zzwPlusButton.m */; };
-		176C31771D644C210040EC60 /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31761D644C210040EC60 /* UIView+LBExtension.m */; };
 		178C80EE1D65A72A0007111A /* alarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80B21D65A72A0007111A /* alarm.caf */; };
 		178C80EF1D65A72A0007111A /* beep-beep.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80B31D65A72A0007111A /* beep-beep.caf */; };
 		178C80F01D65A72A0007111A /* begin_record.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80B41D65A72A0007111A /* begin_record.caf */; };
@@ -79,18 +72,37 @@
 		178C81271D65A72A0007111A /* vc~ended.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80EB1D65A72A0007111A /* vc~ended.caf */; };
 		178C81281D65A72A0007111A /* vc~ringing.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80EC1D65A72A0007111A /* vc~ringing.caf */; };
 		178C81291D65A72A0007111A /* Voicemail.caf in Resources */ = {isa = PBXBuildFile; fileRef = 178C80ED1D65A72A0007111A /* Voicemail.caf */; };
-		178CBB951D66E1A300823446 /* ZZWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBB941D66E1A300823446 /* ZZWViewController.m */; };
-		178CBB9A1D66E3C900823446 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBB991D66E3C900823446 /* HomeController.m */; };
-		178CBB9E1D66E43A00823446 /* fishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBB9D1D66E43A00823446 /* fishController.m */; };
-		178CBBA31D66E46700823446 /* messageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBA21D66E46700823446 /* messageController.m */; };
-		178CBBA61D66E47200823446 /* meController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBA51D66E47200823446 /* meController.m */; };
-		178CBBAB1D66F9AE00823446 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBAA1D66F9AE00823446 /* UIImage+Extension.m */; };
-		178CBBB01D66FC1C00823446 /* UIBarButtonItem+myAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBAF1D66FC1C00823446 /* UIBarButtonItem+myAdd.m */; };
-		178CBBB31D67012C00823446 /* productClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBB21D67012C00823446 /* productClassViewController.m */; };
-		178CBBB81D67033800823446 /* productClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBB61D67033800823446 /* productClassCollectionViewCell.m */; };
-		178CBBB91D67033800823446 /* productClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 178CBBB71D67033800823446 /* productClassCollectionViewCell.xib */; };
-		178CBBBC1D670B2900823446 /* ZZWNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBBB1D670B2900823446 /* ZZWNavViewController.m */; };
-		178CBBBF1D670E5300823446 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 178CBBBE1D670E5300823446 /* UIImage+Image.m */; };
+		179966F01D6A92FE006BB3BF /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 179966ED1D6A92FE006BB3BF /* ProgressHUD.bundle */; };
+		179966F11D6A92FE006BB3BF /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 179966EF1D6A92FE006BB3BF /* ProgressHUD.m */; };
+		179967031D6A9323006BB3BF /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966F31D6A9323006BB3BF /* bitstream.c */; };
+		179967041D6A9323006BB3BF /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966F51D6A9323006BB3BF /* mask.c */; };
+		179967051D6A9323006BB3BF /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 179966F81D6A9323006BB3BF /* QRCodeGenerator.m */; };
+		179967061D6A9323006BB3BF /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966F91D6A9323006BB3BF /* qrencode.c */; };
+		179967071D6A9323006BB3BF /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966FB1D6A9323006BB3BF /* qrinput.c */; };
+		179967081D6A9323006BB3BF /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966FD1D6A9323006BB3BF /* qrspec.c */; };
+		179967091D6A9323006BB3BF /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 179966FF1D6A9323006BB3BF /* rscode.c */; };
+		1799670A1D6A9323006BB3BF /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 179967011D6A9323006BB3BF /* split.c */; };
+		179967141D6A9477006BB3BF /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799670D1D6A9477006BB3BF /* HomeController.m */; };
+		179967151D6A9477006BB3BF /* productClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799670F1D6A9477006BB3BF /* productClassViewController.m */; };
+		179967161D6A9477006BB3BF /* productClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967121D6A9477006BB3BF /* productClassCollectionViewCell.m */; };
+		179967171D6A9477006BB3BF /* productClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179967131D6A9477006BB3BF /* productClassCollectionViewCell.xib */; };
+		1799671B1D6A947C006BB3BF /* fishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799671A1D6A947C006BB3BF /* fishController.m */; };
+		1799671F1D6A9484006BB3BF /* messageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799671E1D6A9484006BB3BF /* messageController.m */; };
+		179967231D6A9489006BB3BF /* meController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967221D6A9489006BB3BF /* meController.m */; };
+		179967271D6A9494006BB3BF /* ZZWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967261D6A9494006BB3BF /* ZZWViewController.m */; };
+		1799672B1D6A9499006BB3BF /* ZZWNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799672A1D6A9499006BB3BF /* ZZWNavViewController.m */; };
+		179967321D6A94A1006BB3BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799672E1D6A94A1006BB3BF /* AppDelegate.m */; };
+		179967331D6A94A1006BB3BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1799672F1D6A94A1006BB3BF /* Info.plist */; };
+		179967341D6A94A1006BB3BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967301D6A94A1006BB3BF /* main.m */; };
+		1799673E1D6A94B3006BB3BF /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967371D6A94B3006BB3BF /* CustomTabBarViewController.m */; };
+		1799673F1D6A94B3006BB3BF /* zzwItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967391D6A94B3006BB3BF /* zzwItemButton.m */; };
+		179967401D6A94B3006BB3BF /* zzwPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799673B1D6A94B3006BB3BF /* zzwPlusButton.m */; };
+		179967411D6A94B3006BB3BF /* zzwTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799673D1D6A94B3006BB3BF /* zzwTabbar.m */; };
+		1799674B1D6A957F006BB3BF /* UIBarButtonItem+myAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967441D6A957F006BB3BF /* UIBarButtonItem+myAdd.m */; };
+		1799674C1D6A957F006BB3BF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967461D6A957F006BB3BF /* UIImage+Extension.m */; };
+		1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967481D6A957F006BB3BF /* UIImage+Image.m */; };
+		1799674E1D6A957F006BB3BF /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */; };
+		AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,29 +124,15 @@
 
 /* Begin PBXFileReference section */
 		176C31301D6404060040EC60 /* Zhang_tabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhang_tabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		176C31341D6404060040EC60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		176C31361D6404060040EC60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		176C31371D6404060040EC60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		176C31401D6404060040EC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176C31421D6404060040EC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176C31451D6404060040EC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		176C31471D6404060040EC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C314C1D6404060040EC60 /* Zhang_tabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zhang_tabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C31501D6404060040EC60 /* Zhang_tabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zhang_tabBarTests.m; sourceTree = "<group>"; };
 		176C31521D6404060040EC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C31571D6404060040EC60 /* Zhang_tabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zhang_tabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C315B1D6404060040EC60 /* Zhang_tabBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zhang_tabBarUITests.m; sourceTree = "<group>"; };
 		176C315D1D6404060040EC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		176C31691D64043D0040EC60 /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
-		176C316A1D64043D0040EC60 /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
-		176C316C1D640C3B0040EC60 /* zzwTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwTabbar.h; sourceTree = "<group>"; };
-		176C316D1D640C3B0040EC60 /* zzwTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwTabbar.m; sourceTree = "<group>"; };
-		176C316F1D640C9D0040EC60 /* zzwItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwItemButton.h; sourceTree = "<group>"; };
-		176C31701D640C9D0040EC60 /* zzwItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwItemButton.m; sourceTree = "<group>"; };
-		176C31721D643A710040EC60 /* zzwPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwPlusButton.h; sourceTree = "<group>"; };
-		176C31731D643A710040EC60 /* zzwPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwPlusButton.m; sourceTree = "<group>"; };
-		176C31751D644C210040EC60 /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
-		176C31761D644C210040EC60 /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 		178C80B21D65A72A0007111A /* alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.caf; sourceTree = "<group>"; };
 		178C80B31D65A72A0007111A /* beep-beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-beep.caf"; sourceTree = "<group>"; };
 		178C80B41D65A72A0007111A /* begin_record.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = begin_record.caf; sourceTree = "<group>"; };
@@ -195,30 +193,66 @@
 		178C80EB1D65A72A0007111A /* vc~ended.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vc~ended.caf"; sourceTree = "<group>"; };
 		178C80EC1D65A72A0007111A /* vc~ringing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vc~ringing.caf"; sourceTree = "<group>"; };
 		178C80ED1D65A72A0007111A /* Voicemail.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Voicemail.caf; sourceTree = "<group>"; };
-		178CBB931D66E1A300823446 /* ZZWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWViewController.h; sourceTree = "<group>"; };
-		178CBB941D66E1A300823446 /* ZZWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWViewController.m; sourceTree = "<group>"; };
-		178CBB981D66E3C900823446 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
-		178CBB991D66E3C900823446 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
-		178CBB9C1D66E43A00823446 /* fishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishController.h; sourceTree = "<group>"; };
-		178CBB9D1D66E43A00823446 /* fishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fishController.m; sourceTree = "<group>"; };
-		178CBBA11D66E46700823446 /* messageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageController.h; sourceTree = "<group>"; };
-		178CBBA21D66E46700823446 /* messageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageController.m; sourceTree = "<group>"; };
-		178CBBA41D66E47200823446 /* meController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meController.h; sourceTree = "<group>"; };
-		178CBBA51D66E47200823446 /* meController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meController.m; sourceTree = "<group>"; };
-		178CBBA71D66E50E00823446 /* ZZW_Project.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZW_Project.pch; sourceTree = "<group>"; };
-		178CBBA91D66F9AE00823446 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		178CBBAA1D66F9AE00823446 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
-		178CBBAE1D66FC1C00823446 /* UIBarButtonItem+myAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+myAdd.h"; sourceTree = "<group>"; };
-		178CBBAF1D66FC1C00823446 /* UIBarButtonItem+myAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+myAdd.m"; sourceTree = "<group>"; };
-		178CBBB11D67012C00823446 /* productClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productClassViewController.h; sourceTree = "<group>"; };
-		178CBBB21D67012C00823446 /* productClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productClassViewController.m; sourceTree = "<group>"; };
-		178CBBB51D67033800823446 /* productClassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productClassCollectionViewCell.h; sourceTree = "<group>"; };
-		178CBBB61D67033800823446 /* productClassCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productClassCollectionViewCell.m; sourceTree = "<group>"; };
-		178CBBB71D67033800823446 /* productClassCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = productClassCollectionViewCell.xib; sourceTree = "<group>"; };
-		178CBBBA1D670B2900823446 /* ZZWNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWNavViewController.h; sourceTree = "<group>"; };
-		178CBBBB1D670B2900823446 /* ZZWNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWNavViewController.m; sourceTree = "<group>"; };
-		178CBBBD1D670E5300823446 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		178CBBBE1D670E5300823446 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		179966ED1D6A92FE006BB3BF /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		179966EE1D6A92FE006BB3BF /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		179966EF1D6A92FE006BB3BF /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		179966F31D6A9323006BB3BF /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		179966F41D6A9323006BB3BF /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		179966F51D6A9323006BB3BF /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		179966F61D6A9323006BB3BF /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		179966F71D6A9323006BB3BF /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		179966F81D6A9323006BB3BF /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		179966F91D6A9323006BB3BF /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		179966FA1D6A9323006BB3BF /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		179966FB1D6A9323006BB3BF /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		179966FC1D6A9323006BB3BF /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		179966FD1D6A9323006BB3BF /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		179966FE1D6A9323006BB3BF /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		179966FF1D6A9323006BB3BF /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		179967001D6A9323006BB3BF /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		179967011D6A9323006BB3BF /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		179967021D6A9323006BB3BF /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		1799670C1D6A9477006BB3BF /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		1799670D1D6A9477006BB3BF /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		1799670E1D6A9477006BB3BF /* productClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productClassViewController.h; sourceTree = "<group>"; };
+		1799670F1D6A9477006BB3BF /* productClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productClassViewController.m; sourceTree = "<group>"; };
+		179967111D6A9477006BB3BF /* productClassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productClassCollectionViewCell.h; sourceTree = "<group>"; };
+		179967121D6A9477006BB3BF /* productClassCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productClassCollectionViewCell.m; sourceTree = "<group>"; };
+		179967131D6A9477006BB3BF /* productClassCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = productClassCollectionViewCell.xib; sourceTree = "<group>"; };
+		179967191D6A947C006BB3BF /* fishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishController.h; sourceTree = "<group>"; };
+		1799671A1D6A947C006BB3BF /* fishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fishController.m; sourceTree = "<group>"; };
+		1799671D1D6A9484006BB3BF /* messageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageController.h; sourceTree = "<group>"; };
+		1799671E1D6A9484006BB3BF /* messageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageController.m; sourceTree = "<group>"; };
+		179967211D6A9489006BB3BF /* meController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meController.h; sourceTree = "<group>"; };
+		179967221D6A9489006BB3BF /* meController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meController.m; sourceTree = "<group>"; };
+		179967251D6A9494006BB3BF /* ZZWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWViewController.h; sourceTree = "<group>"; };
+		179967261D6A9494006BB3BF /* ZZWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWViewController.m; sourceTree = "<group>"; };
+		179967291D6A9499006BB3BF /* ZZWNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWNavViewController.h; sourceTree = "<group>"; };
+		1799672A1D6A9499006BB3BF /* ZZWNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWNavViewController.m; sourceTree = "<group>"; };
+		1799672D1D6A94A1006BB3BF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1799672E1D6A94A1006BB3BF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1799672F1D6A94A1006BB3BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179967301D6A94A1006BB3BF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		179967311D6A94A1006BB3BF /* ZZW_Project.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZW_Project.pch; sourceTree = "<group>"; };
+		179967361D6A94B3006BB3BF /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		179967371D6A94B3006BB3BF /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		179967381D6A94B3006BB3BF /* zzwItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwItemButton.h; sourceTree = "<group>"; };
+		179967391D6A94B3006BB3BF /* zzwItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwItemButton.m; sourceTree = "<group>"; };
+		1799673A1D6A94B3006BB3BF /* zzwPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwPlusButton.h; sourceTree = "<group>"; };
+		1799673B1D6A94B3006BB3BF /* zzwPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwPlusButton.m; sourceTree = "<group>"; };
+		1799673C1D6A94B3006BB3BF /* zzwTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzwTabbar.h; sourceTree = "<group>"; };
+		1799673D1D6A94B3006BB3BF /* zzwTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzwTabbar.m; sourceTree = "<group>"; };
+		179967431D6A957F006BB3BF /* UIBarButtonItem+myAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+myAdd.h"; sourceTree = "<group>"; };
+		179967441D6A957F006BB3BF /* UIBarButtonItem+myAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+myAdd.m"; sourceTree = "<group>"; };
+		179967451D6A957F006BB3BF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		179967461D6A957F006BB3BF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		179967471D6A957F006BB3BF /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		179967481D6A957F006BB3BF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		179967491D6A957F006BB3BF /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.debug.xcconfig"; sourceTree = "<group>"; };
+		9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.release.xcconfig"; sourceTree = "<group>"; };
+		FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhang_tabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +288,8 @@
 				176C314F1D6404060040EC60 /* Zhang_tabBarTests */,
 				176C315A1D6404060040EC60 /* Zhang_tabBarUITests */,
 				176C31311D6404060040EC60 /* Products */,
+				2EB02717707CDA1B29CA15EB /* Pods */,
+				5E06776D6660E3015718956B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,43 +306,22 @@
 		176C31321D6404060040EC60 /* Zhang_tabBar */ = {
 			isa = PBXGroup;
 			children = (
-				178CBB921D66E14000823446 /* Main */,
-				178CBB971D66E3AD00823446 /* Home */,
-				178CBB9B1D66E41600823446 /* fishSecond */,
-				178CBB9F1D66E44500823446 /* message */,
-				178CBBA01D66E45200823446 /* Me */,
-				176C31751D644C210040EC60 /* UIView+LBExtension.h */,
-				176C31761D644C210040EC60 /* UIView+LBExtension.m */,
-				176C31361D6404060040EC60 /* AppDelegate.h */,
-				176C31371D6404060040EC60 /* AppDelegate.m */,
-				178CBBBA1D670B2900823446 /* ZZWNavViewController.h */,
-				178CBBBB1D670B2900823446 /* ZZWNavViewController.m */,
-				176C31691D64043D0040EC60 /* CustomTabBarViewController.h */,
-				176C316A1D64043D0040EC60 /* CustomTabBarViewController.m */,
-				176C316C1D640C3B0040EC60 /* zzwTabbar.h */,
-				176C316D1D640C3B0040EC60 /* zzwTabbar.m */,
-				176C316F1D640C9D0040EC60 /* zzwItemButton.h */,
-				176C31701D640C9D0040EC60 /* zzwItemButton.m */,
-				176C31721D643A710040EC60 /* zzwPlusButton.h */,
-				176C31731D643A710040EC60 /* zzwPlusButton.m */,
+				179967351D6A94B3006BB3BF /* Tabbar */,
+				1799670B1D6A9477006BB3BF /* Home */,
+				179967181D6A947C006BB3BF /* fishSecond */,
+				1799671C1D6A9484006BB3BF /* Message */,
+				179967201D6A9489006BB3BF /* Me */,
+				179967241D6A9494006BB3BF /* Main */,
+				179967281D6A9499006BB3BF /* Nav */,
+				179966EB1D6A92C1006BB3BF /* lib */,
+				179967421D6A957F006BB3BF /* Category */,
 				176C313F1D6404060040EC60 /* Main.storyboard */,
 				176C31421D6404060040EC60 /* Assets.xcassets */,
 				176C31441D6404060040EC60 /* LaunchScreen.storyboard */,
-				176C31471D6404060040EC60 /* Info.plist */,
-				178CBBA81D66F97D00823446 /* category */,
+				1799672C1D6A94A1006BB3BF /* Supporting Files */,
 				178C80B11D65A72A0007111A /* UISounds */,
-				176C31331D6404060040EC60 /* Supporting Files */,
 			);
 			path = Zhang_tabBar;
-			sourceTree = "<group>";
-		};
-		176C31331D6404060040EC60 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				176C31341D6404060040EC60 /* main.m */,
-				178CBBA71D66E50E00823446 /* ZZW_Project.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		176C314F1D6404060040EC60 /* Zhang_tabBarTests */ = {
@@ -393,75 +409,172 @@
 			path = UISounds;
 			sourceTree = "<group>";
 		};
-		178CBB921D66E14000823446 /* Main */ = {
+		179966EB1D6A92C1006BB3BF /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				178CBB931D66E1A300823446 /* ZZWViewController.h */,
-				178CBB941D66E1A300823446 /* ZZWViewController.m */,
+				179966F21D6A9323006BB3BF /* libqrencode */,
+				179966EC1D6A92FE006BB3BF /* ProgressHUD */,
 			);
-			name = Main;
+			path = lib;
 			sourceTree = "<group>";
 		};
-		178CBB971D66E3AD00823446 /* Home */ = {
+		179966EC1D6A92FE006BB3BF /* ProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				178CBB981D66E3C900823446 /* HomeController.h */,
-				178CBB991D66E3C900823446 /* HomeController.m */,
-				178CBBB11D67012C00823446 /* productClassViewController.h */,
-				178CBBB21D67012C00823446 /* productClassViewController.m */,
-				178CBBB41D67031300823446 /* view */,
+				179966ED1D6A92FE006BB3BF /* ProgressHUD.bundle */,
+				179966EE1D6A92FE006BB3BF /* ProgressHUD.h */,
+				179966EF1D6A92FE006BB3BF /* ProgressHUD.m */,
 			);
-			name = Home;
+			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
-		178CBB9B1D66E41600823446 /* fishSecond */ = {
+		179966F21D6A9323006BB3BF /* libqrencode */ = {
 			isa = PBXGroup;
 			children = (
-				178CBB9C1D66E43A00823446 /* fishController.h */,
-				178CBB9D1D66E43A00823446 /* fishController.m */,
+				179966F31D6A9323006BB3BF /* bitstream.c */,
+				179966F41D6A9323006BB3BF /* bitstream.h */,
+				179966F51D6A9323006BB3BF /* mask.c */,
+				179966F61D6A9323006BB3BF /* mask.h */,
+				179966F71D6A9323006BB3BF /* QRCodeGenerator.h */,
+				179966F81D6A9323006BB3BF /* QRCodeGenerator.m */,
+				179966F91D6A9323006BB3BF /* qrencode.c */,
+				179966FA1D6A9323006BB3BF /* qrencode.h */,
+				179966FB1D6A9323006BB3BF /* qrinput.c */,
+				179966FC1D6A9323006BB3BF /* qrinput.h */,
+				179966FD1D6A9323006BB3BF /* qrspec.c */,
+				179966FE1D6A9323006BB3BF /* qrspec.h */,
+				179966FF1D6A9323006BB3BF /* rscode.c */,
+				179967001D6A9323006BB3BF /* rscode.h */,
+				179967011D6A9323006BB3BF /* split.c */,
+				179967021D6A9323006BB3BF /* split.h */,
 			);
-			name = fishSecond;
+			path = libqrencode;
 			sourceTree = "<group>";
 		};
-		178CBB9F1D66E44500823446 /* message */ = {
+		1799670B1D6A9477006BB3BF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				178CBBA11D66E46700823446 /* messageController.h */,
-				178CBBA21D66E46700823446 /* messageController.m */,
+				1799670C1D6A9477006BB3BF /* HomeController.h */,
+				1799670D1D6A9477006BB3BF /* HomeController.m */,
+				1799670E1D6A9477006BB3BF /* productClassViewController.h */,
+				1799670F1D6A9477006BB3BF /* productClassViewController.m */,
+				179967101D6A9477006BB3BF /* view */,
 			);
-			name = message;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		178CBBA01D66E45200823446 /* Me */ = {
+		179967101D6A9477006BB3BF /* view */ = {
 			isa = PBXGroup;
 			children = (
-				178CBBA41D66E47200823446 /* meController.h */,
-				178CBBA51D66E47200823446 /* meController.m */,
+				179967111D6A9477006BB3BF /* productClassCollectionViewCell.h */,
+				179967121D6A9477006BB3BF /* productClassCollectionViewCell.m */,
+				179967131D6A9477006BB3BF /* productClassCollectionViewCell.xib */,
 			);
-			name = Me;
+			path = view;
 			sourceTree = "<group>";
 		};
-		178CBBA81D66F97D00823446 /* category */ = {
+		179967181D6A947C006BB3BF /* fishSecond */ = {
 			isa = PBXGroup;
 			children = (
-				178CBBA91D66F9AE00823446 /* UIImage+Extension.h */,
-				178CBBAA1D66F9AE00823446 /* UIImage+Extension.m */,
-				178CBBAE1D66FC1C00823446 /* UIBarButtonItem+myAdd.h */,
-				178CBBAF1D66FC1C00823446 /* UIBarButtonItem+myAdd.m */,
-				178CBBBD1D670E5300823446 /* UIImage+Image.h */,
-				178CBBBE1D670E5300823446 /* UIImage+Image.m */,
+				179967191D6A947C006BB3BF /* fishController.h */,
+				1799671A1D6A947C006BB3BF /* fishController.m */,
 			);
-			name = category;
+			path = fishSecond;
 			sourceTree = "<group>";
 		};
-		178CBBB41D67031300823446 /* view */ = {
+		1799671C1D6A9484006BB3BF /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				178CBBB51D67033800823446 /* productClassCollectionViewCell.h */,
-				178CBBB61D67033800823446 /* productClassCollectionViewCell.m */,
-				178CBBB71D67033800823446 /* productClassCollectionViewCell.xib */,
+				1799671D1D6A9484006BB3BF /* messageController.h */,
+				1799671E1D6A9484006BB3BF /* messageController.m */,
 			);
-			name = view;
+			path = Message;
+			sourceTree = "<group>";
+		};
+		179967201D6A9489006BB3BF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				179967211D6A9489006BB3BF /* meController.h */,
+				179967221D6A9489006BB3BF /* meController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		179967241D6A9494006BB3BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				179967251D6A9494006BB3BF /* ZZWViewController.h */,
+				179967261D6A9494006BB3BF /* ZZWViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		179967281D6A9499006BB3BF /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				179967291D6A9499006BB3BF /* ZZWNavViewController.h */,
+				1799672A1D6A9499006BB3BF /* ZZWNavViewController.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		1799672C1D6A94A1006BB3BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1799672D1D6A94A1006BB3BF /* AppDelegate.h */,
+				1799672E1D6A94A1006BB3BF /* AppDelegate.m */,
+				179967301D6A94A1006BB3BF /* main.m */,
+				179967311D6A94A1006BB3BF /* ZZW_Project.pch */,
+				1799672F1D6A94A1006BB3BF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		179967351D6A94B3006BB3BF /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				179967361D6A94B3006BB3BF /* CustomTabBarViewController.h */,
+				179967371D6A94B3006BB3BF /* CustomTabBarViewController.m */,
+				179967381D6A94B3006BB3BF /* zzwItemButton.h */,
+				179967391D6A94B3006BB3BF /* zzwItemButton.m */,
+				1799673A1D6A94B3006BB3BF /* zzwPlusButton.h */,
+				1799673B1D6A94B3006BB3BF /* zzwPlusButton.m */,
+				1799673C1D6A94B3006BB3BF /* zzwTabbar.h */,
+				1799673D1D6A94B3006BB3BF /* zzwTabbar.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		179967421D6A957F006BB3BF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				179967431D6A957F006BB3BF /* UIBarButtonItem+myAdd.h */,
+				179967441D6A957F006BB3BF /* UIBarButtonItem+myAdd.m */,
+				179967451D6A957F006BB3BF /* UIImage+Extension.h */,
+				179967461D6A957F006BB3BF /* UIImage+Extension.m */,
+				179967471D6A957F006BB3BF /* UIImage+Image.h */,
+				179967481D6A957F006BB3BF /* UIImage+Image.m */,
+				179967491D6A957F006BB3BF /* UIView+LBExtension.h */,
+				1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2EB02717707CDA1B29CA15EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */,
+				9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E06776D6660E3015718956B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,9 +584,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 176C31601D6404060040EC60 /* Build configuration list for PBXNativeTarget "Zhang_tabBar" */;
 			buildPhases = (
+				CFF8D1B804C24D61F181FAFF /* Check Pods Manifest.lock */,
 				176C312C1D6404060040EC60 /* Sources */,
 				176C312D1D6404060040EC60 /* Frameworks */,
 				176C312E1D6404060040EC60 /* Resources */,
+				A94F7B372129FD00C36B4287 /* Embed Pods Frameworks */,
+				27E80226E87659C7490F9AB5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -570,10 +686,12 @@
 				178C81181D65A72A0007111A /* SIMToolkitPositiveACK.caf in Resources */,
 				178C811B1D65A72A0007111A /* sms-received2.caf in Resources */,
 				178C81231D65A72A0007111A /* sq_tock.caf in Resources */,
+				179966F01D6A92FE006BB3BF /* ProgressHUD.bundle in Resources */,
 				178C811A1D65A72A0007111A /* sms-received1.caf in Resources */,
 				178C81001D65A72A0007111A /* dtmf-8.caf in Resources */,
 				178C80FC1D65A72A0007111A /* dtmf-4.caf in Resources */,
 				178C81011D65A72A0007111A /* dtmf-9.caf in Resources */,
+				179967331D6A94A1006BB3BF /* Info.plist in Resources */,
 				178C810A1D65A72A0007111A /* low_power.caf in Resources */,
 				178C81221D65A72A0007111A /* sq_lock.caf in Resources */,
 				178C81111D65A72A0007111A /* shake.caf in Resources */,
@@ -591,6 +709,7 @@
 				178C810B1D65A72A0007111A /* mail-sent.caf in Resources */,
 				178C81051D65A72A0007111A /* end_video_record.caf in Resources */,
 				178C810E1D65A72A0007111A /* ReceivedMessage.caf in Resources */,
+				179967171D6A9477006BB3BF /* productClassCollectionViewCell.xib in Resources */,
 				178C81121D65A72A0007111A /* short_double_high.caf in Resources */,
 				178C80FB1D65A72A0007111A /* dtmf-3.caf in Resources */,
 				178C81261D65A72A0007111A /* unlock.caf in Resources */,
@@ -620,7 +739,6 @@
 				178C81141D65A72A0007111A /* short_low_high.caf in Resources */,
 				176C31431D6404060040EC60 /* Assets.xcassets in Resources */,
 				178C811D1D65A72A0007111A /* sms-received4.caf in Resources */,
-				178CBBB91D67033800823446 /* productClassCollectionViewCell.xib in Resources */,
 				178C81191D65A72A0007111A /* SIMToolkitSMS.caf in Resources */,
 				178C81281D65A72A0007111A /* vc~ringing.caf in Resources */,
 				178C80EE1D65A72A0007111A /* alarm.caf in Resources */,
@@ -650,29 +768,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27E80226E87659C7490F9AB5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94F7B372129FD00C36B4287 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF8D1B804C24D61F181FAFF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		176C312C1D6404060040EC60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178CBBB01D66FC1C00823446 /* UIBarButtonItem+myAdd.m in Sources */,
-				178CBB951D66E1A300823446 /* ZZWViewController.m in Sources */,
-				178CBBB81D67033800823446 /* productClassCollectionViewCell.m in Sources */,
-				178CBBBF1D670E5300823446 /* UIImage+Image.m in Sources */,
-				176C31381D6404060040EC60 /* AppDelegate.m in Sources */,
-				176C31771D644C210040EC60 /* UIView+LBExtension.m in Sources */,
-				178CBBA61D66E47200823446 /* meController.m in Sources */,
-				176C31741D643A710040EC60 /* zzwPlusButton.m in Sources */,
-				176C316E1D640C3B0040EC60 /* zzwTabbar.m in Sources */,
-				178CBBA31D66E46700823446 /* messageController.m in Sources */,
-				176C316B1D64043D0040EC60 /* CustomTabBarViewController.m in Sources */,
-				178CBBAB1D66F9AE00823446 /* UIImage+Extension.m in Sources */,
-				176C31351D6404060040EC60 /* main.m in Sources */,
-				178CBBBC1D670B2900823446 /* ZZWNavViewController.m in Sources */,
-				178CBB9E1D66E43A00823446 /* fishController.m in Sources */,
-				178CBB9A1D66E3C900823446 /* HomeController.m in Sources */,
-				178CBBB31D67012C00823446 /* productClassViewController.m in Sources */,
-				176C31711D640C9D0040EC60 /* zzwItemButton.m in Sources */,
+				1799673F1D6A94B3006BB3BF /* zzwItemButton.m in Sources */,
+				179967141D6A9477006BB3BF /* HomeController.m in Sources */,
+				1799671F1D6A9484006BB3BF /* messageController.m in Sources */,
+				179967091D6A9323006BB3BF /* rscode.c in Sources */,
+				179967061D6A9323006BB3BF /* qrencode.c in Sources */,
+				1799674C1D6A957F006BB3BF /* UIImage+Extension.m in Sources */,
+				179967341D6A94A1006BB3BF /* main.m in Sources */,
+				1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */,
+				179967411D6A94B3006BB3BF /* zzwTabbar.m in Sources */,
+				179967071D6A9323006BB3BF /* qrinput.c in Sources */,
+				179967271D6A9494006BB3BF /* ZZWViewController.m in Sources */,
+				1799671B1D6A947C006BB3BF /* fishController.m in Sources */,
+				1799670A1D6A9323006BB3BF /* split.c in Sources */,
+				179967051D6A9323006BB3BF /* QRCodeGenerator.m in Sources */,
+				179966F11D6A92FE006BB3BF /* ProgressHUD.m in Sources */,
+				179967031D6A9323006BB3BF /* bitstream.c in Sources */,
+				179967161D6A9477006BB3BF /* productClassCollectionViewCell.m in Sources */,
+				179967401D6A94B3006BB3BF /* zzwPlusButton.m in Sources */,
+				179967321D6A94A1006BB3BF /* AppDelegate.m in Sources */,
+				1799672B1D6A9499006BB3BF /* ZZWNavViewController.m in Sources */,
+				1799674B1D6A957F006BB3BF /* UIBarButtonItem+myAdd.m in Sources */,
+				179967081D6A9323006BB3BF /* qrspec.c in Sources */,
+				1799673E1D6A94B3006BB3BF /* CustomTabBarViewController.m in Sources */,
+				179967041D6A9323006BB3BF /* mask.c in Sources */,
+				1799674E1D6A957F006BB3BF /* UIView+LBExtension.m in Sources */,
+				179967151D6A9477006BB3BF /* productClassViewController.m in Sources */,
+				179967231D6A9489006BB3BF /* meController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,11 +988,12 @@
 		};
 		176C31611D6404060040EC60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/ZZW_Project.pch";
-				INFOPLIST_FILE = Zhang_tabBar/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/Supporting Files/ZZW_Project.pch";
+				INFOPLIST_FILE = "Zhang_tabBar/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.Zhang-tabBar";
@@ -827,11 +1003,12 @@
 		};
 		176C31621D6404060040EC60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/ZZW_Project.pch";
-				INFOPLIST_FILE = Zhang_tabBar/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/Supporting Files/ZZW_Project.pch";
+				INFOPLIST_FILE = "Zhang_tabBar/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.Zhang-tabBar";
