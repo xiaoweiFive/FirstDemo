@@ -102,6 +102,7 @@
 		1799674C1D6A957F006BB3BF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967461D6A957F006BB3BF /* UIImage+Extension.m */; };
 		1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967481D6A957F006BB3BF /* UIImage+Image.m */; };
 		1799674E1D6A957F006BB3BF /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */; };
+		179967841D6AB1AC006BB3BF /* ZZWGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967831D6AB1AC006BB3BF /* ZZWGlobal.m */; };
 		AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */; };
 /* End PBXBuildFile section */
 
@@ -250,6 +251,8 @@
 		179967481D6A957F006BB3BF /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		179967491D6A957F006BB3BF /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
 		1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		179967821D6AB1AC006BB3BF /* ZZWGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWGlobal.h; sourceTree = "<group>"; };
+		179967831D6AB1AC006BB3BF /* ZZWGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWGlobal.m; sourceTree = "<group>"; };
 		1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.release.xcconfig"; sourceTree = "<group>"; };
 		FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhang_tabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -505,6 +508,8 @@
 			children = (
 				179967251D6A9494006BB3BF /* ZZWViewController.h */,
 				179967261D6A9494006BB3BF /* ZZWViewController.m */,
+				179967821D6AB1AC006BB3BF /* ZZWGlobal.h */,
+				179967831D6AB1AC006BB3BF /* ZZWGlobal.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				TargetAttributes = {
 					176C312F1D6404060040EC60 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QH2QDQ247S;
 					};
 					176C314B1D6404060040EC60 = {
 						CreatedOnToolsVersion = 7.3;
@@ -831,6 +837,7 @@
 				1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */,
 				179967411D6A94B3006BB3BF /* zzwTabbar.m in Sources */,
 				179967071D6A9323006BB3BF /* qrinput.c in Sources */,
+				179967841D6AB1AC006BB3BF /* ZZWGlobal.m in Sources */,
 				179967271D6A9494006BB3BF /* ZZWViewController.m in Sources */,
 				1799671B1D6A947C006BB3BF /* fishController.m in Sources */,
 				1799670A1D6A9323006BB3BF /* split.c in Sources */,
@@ -991,13 +998,16 @@
 			baseConfigurationReference = 1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/Supporting Files/ZZW_Project.pch";
 				INFOPLIST_FILE = "Zhang_tabBar/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhang.Zhang-tabBar";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhang-tabBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1006,13 +1016,16 @@
 			baseConfigurationReference = 9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhang_tabBar/Supporting Files/ZZW_Project.pch";
 				INFOPLIST_FILE = "Zhang_tabBar/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhang.Zhang-tabBar";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhang-tabBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -24,7 +24,7 @@
 - (void)setNav{
     self.navigationItem.title = @"";
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor yellowColor]] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor yellowColor]] forBarMetrics:UIBarMetricsDefault];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(clickLeftBtn) icon:@"scan_icon" hightLightIcon:@"scan_icon"];
 

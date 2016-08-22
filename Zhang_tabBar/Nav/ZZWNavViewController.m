@@ -8,9 +8,12 @@
 
 #import "ZZWNavViewController.h"
 #import "UIBarButtonItem+myAdd.h"
-
-
+#import "zzwPlusButton.h"
+#import "ZZWGlobal.h"
 #import "UIImage+Image.h"
+#import "AppDelegate.h"
+
+#import "CustomTabBarViewController.h"
 
 @interface ZZWNavViewController ()
 
@@ -107,9 +110,11 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    zzwPlusButton *plusBtn =  [ZZWGlobal shareQSCGlobal].plusBtn;
+
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        
+        plusBtn.hidden = YES;
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) icon:@"nav_back" hightLightIcon:@"nav_back"];
     }
     [super pushViewController:viewController animated:animated];
@@ -118,34 +123,44 @@
 
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
     
-    if (self.navigationController.viewControllers.count > 1) {
-        self.tabBarController.tabBar.hidden = YES;
-    }else {
-        self.tabBarController.tabBar.hidden = NO;
-    }
+    [self setTabbarHiddenOrShow];
+
     return  [super popViewControllerAnimated:animated];
 }
 
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
 {
-    if (self.navigationController.viewControllers.count > 1) {
-        self.tabBarController.tabBar.hidden = YES;
-    }else {
-        self.tabBarController.tabBar.hidden = NO;
-    }
+    [self setTabbarHiddenOrShow];
+
     return  [super popToRootViewControllerAnimated:animated];
 }
 
 
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    [self setTabbarHiddenOrShow];
+    return  [super popToViewController:viewController animated:animated];
+}
+
+
+//控制tabbar的现实与隐藏
+-(void)setTabbarHiddenOrShow{
+    zzwPlusButton *plusBtn =  [ZZWGlobal shareQSCGlobal].plusBtn;
+    
     if (self.navigationController.viewControllers.count > 1) {
         self.tabBarController.tabBar.hidden = YES;
+        plusBtn.hidden = YES;
+        
     }else {
         self.tabBarController.tabBar.hidden = NO;
+        plusBtn.hidden = NO;
+        
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        CustomTabBarViewController *tabVC = (CustomTabBarViewController *)appDelegate.window.rootViewController;
+        [tabVC.view.superview addSubview:plusBtn];
+        
     }
-    return  [super popToViewController:viewController animated:animated];
 }
 
 

@@ -22,7 +22,7 @@
 @interface zzwTabbar : UITabBar
 
 
-@property (nonatomic, assign)id<ZZWTabBarDelegate> delegate;
+@property (nonatomic, assign)id <ZZWTabBarDelegate> delegate;
 
 /** 所有的弹出按钮 */
 @property (nonatomic, strong)NSArray *itemButtonArray;

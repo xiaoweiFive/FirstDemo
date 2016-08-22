@@ -9,6 +9,8 @@
 #import "zzwTabbar.h"
 #import "UIView+LBExtension.h"
 
+#import "ZZWGlobal.h"
+
 #define Magin 10
 
 @interface zzwTabbar()<zzwPlusButtonDelegate>
@@ -35,37 +37,32 @@
 //重新绘制  自定义中间的按钮 以及 参数的配置
 - (void)drawRect:(CGRect)rect {
     
-//    self.plusBtn = [[zzwPlusButton alloc]initWithCenterImage:[UIImage imageNamed:@"post_normal"]highlightedImage:[UIImage imageNamed:@"post_normal"]];
-//    self.plusBtn.delegate = self;
-//    [self setUpPathButton:self.plusBtn];
-//    self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - self.height * 0.5 - 2 *Magin );
-//    [self.plusBtn addPathItems:self.itemButtonArray];
-//    //必须加到父视图上
-//    [self addSubview:self.plusBtn];
-//    UILabel *label = [[UILabel alloc]init];
-//    label.text = @"发布";
-//    label.font = [UIFont systemFontOfSize:13];
-//    [label sizeToFit];
-//    label.textColor = [UIColor grayColor];
-//    label.centerX = _plusBtn.centerX;
-//    label.centerY = CGRectGetMaxY(_plusBtn.frame) + Magin;
-//    [self addSubview:label];
+    self.plusBtn = [[zzwPlusButton alloc]initWithCenterImage:[UIImage imageNamed:@"chooser-button-tab"]highlightedImage:[UIImage imageNamed:@"chooser-button-tab"]];
+    self.plusBtn.delegate = self;
+    [ZZWGlobal shareQSCGlobal].plusBtn = self.plusBtn ;
     
+    [self setUpPathButton:self.plusBtn];
+    self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - 49);
+    [self.plusBtn addPathItems:self.itemButtonArray];
+    //必须加到父视图上
+    [self.superview addSubview:self.plusBtn];
+
     
-    UIButton *plusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [plusBtn setBackgroundImage:[UIImage imageNamed:@"post_normal"] forState:UIControlStateNormal];
-    [plusBtn setTitle:@"发布" forState:UIControlStateNormal];
-    [plusBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
-    plusBtn.titleLabel.font = [UIFont systemFontOfSize:10];
-    plusBtn.titleEdgeInsets = UIEdgeInsetsMake(78, 0, 0, 0);
-    plusBtn.size = plusBtn.currentBackgroundImage.size;
-//    [plusBtn addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:plusBtn];
-    self.plusBtn = plusBtn;
-    //1.设置自定义按钮的位置
-    self.plusBtn.centerX = self.width*0.5;
-    self.plusBtn.y = -25;
+//    
+//    UIButton *plusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [plusBtn setBackgroundImage:[UIImage imageNamed:@"post_normal"] forState:UIControlStateNormal];
+//    [plusBtn setTitle:@"发布" forState:UIControlStateNormal];
+//    [plusBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    
+//    plusBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+//    plusBtn.titleEdgeInsets = UIEdgeInsetsMake(78, 0, 0, 0);
+//    plusBtn.size = plusBtn.currentBackgroundImage.size;
+////    [plusBtn addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:plusBtn];
+//    self.plusBtn = plusBtn;
+//    //1.设置自定义按钮的位置
+//    self.plusBtn.centerX = self.width*0.5;
+//    self.plusBtn.y = -25;
 
 }
 

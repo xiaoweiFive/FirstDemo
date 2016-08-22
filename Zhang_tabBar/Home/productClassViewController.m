@@ -26,11 +26,27 @@
 
     [self setCollectView];
     
-    
+    [self setRightItem:@"完成"];
+
     
     
 }
 
+- (void)setRightItem:(NSString *)rightTitle
+{
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,48,30)];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize: 15.0];
+    [rightButton setTitle:rightTitle forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(btnReleaseProjectClick)forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+//    _rightButton = rightButton;
+    self.navigationItem.rightBarButtonItem= rightItem;
+}
+
+
+-(void)btnReleaseProjectClick{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)setCollectView{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];

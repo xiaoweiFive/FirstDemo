@@ -8,6 +8,8 @@
 
 #import "zzwPlusButton.h"
 #import "zzwItemButton.h"
+#import "UIView+LBExtension.h"
+
 
 @interface zzwPlusButton()
 
@@ -35,6 +37,8 @@
 
 @property (assign, nonatomic, getter = isBloom) BOOL bloom;
 @property (strong, nonatomic) UIView *backView;
+
+@property (strong, nonatomic) UILabel *titleLabel;
 @end
 
 @implementation zzwPlusButton
@@ -87,11 +91,8 @@
         _allowSubItemRotation = YES;
         
         _basicDuration = 0.3f;
-        
-
-        
+ 
     }
-    
     
     return  self;
 }
@@ -128,6 +129,20 @@
     [_pathCenterButton addTarget:self action:@selector(centerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     _pathCenterButton.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     [self addSubview:_pathCenterButton];
+    
+    
+    
+    UILabel *label = [[UILabel alloc]init];
+    _titleLabel = label;
+    label.text = @"发布";
+    label.font = [UIFont systemFontOfSize:13];
+    [label sizeToFit];
+    label.textColor = [UIColor grayColor];
+    label.textAlignment = NSTextAlignmentCenter;
+//    label.frame = CGRectMake(kDeviceWidth*0.4, KDeviceHeight-49+self.frame.size.height/2+5, kDeviceWidth*0.2, 15);
+//    [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:label];
+    label.frame = CGRectMake(0, TabBar_HEIGHT-self.height/2+15, self.width, 15);
+    [self addSubview:label];
     
     // Configure bottom view
     //
@@ -283,7 +298,7 @@
     
     CGFloat itemGapAngel = self.bloomAngel / (self.itemButtons.count - 1) ;
     CGFloat currentAngel = (180.0f - self. bloomAngel)/2.0f;
-    
+
     // Load item buttons from array
     //
     for (int i = 0; i < self.itemButtons.count; i++) {
@@ -323,6 +338,8 @@
                             options:UIViewAnimationOptionCurveEaseIn
                          animations:^{
                              _pathCenterButton.transform = CGAffineTransformMakeRotation(0);
+                           _titleLabel.alpha =  1;
+
                          }
                          completion:nil];
     }
@@ -332,6 +349,7 @@
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          _bottomView.alpha = 0.0f;
+
                      }
                      completion:nil];
     
@@ -430,20 +448,20 @@
     //
     self.frame = CGRectMake(0, 0, self.bloomSize.width, self.bloomSize.height);
     self.center = CGPointMake(self.bloomSize.width / 2, self.bloomSize.height / 2);
+    _titleLabel.alpha = 0;
     
     if (!_backView) {
         UIView *backView = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].keyWindow.rootViewController.view.bounds];
         backView.backgroundColor = [UIColor blackColor];
-        backView.alpha = 0.2;
+        backView.alpha = .5;
         _backView = backView;
     }
     _backView.hidden = NO;
     [self insertSubview:_backView belowSubview:self.bottomView];
-
-    
-    
     [self insertSubview:self.bottomView belowSubview:self.pathCenterButton];
     
+    [self bringSubviewToFront:self.pathCenterButton];
+
     // 3. Excute the bottom view alpha animation
     //
     [UIView animateWithDuration:0.0618f * 3

@@ -15,10 +15,17 @@
 #define kDeviceScale [UIScreen mainScreen].scale
 #define kDeviceWidthPoint (kDeviceWidth * kDeviceScale)
 #define KDeviceHeight [[[UIDevice currentDevice] systemVersion] floatValue] < 7.0?[UIScreen mainScreen].bounds.size.height - 20 : [UIScreen mainScreen].bounds.size.height
+#define NavigationBar_HEIGHT 44.0f
+#define TabBar_HEIGHT 49.0f
+#define StatusBar_HEIGHT 20.0f
+#define ToolsBar_HEIGHT 44.0f
+
+
 #define RATE kDeviceWidth / 375.0
 #define RATEY (KDeviceHeight / 667.0)
 #define rateX(x) (x*RATE)
 #define rateY(y) (y*RATEY)
+
 /**	rgba颜色 */
 #define QSCTextColor RGB(67, 172, 67)
 #define QSCLineColor RGB(234,236,238)
@@ -61,6 +68,14 @@
 #define iOS71s ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.1)
 #define WINDOW [[[UIApplication sharedApplication] delegate] window]
 
+
+//设置圆角和边框
+#define ZZWViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
 
 
 #endif

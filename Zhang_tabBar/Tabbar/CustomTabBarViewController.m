@@ -16,6 +16,7 @@
 #import "fishController.h"
 #import "meController.h"
 #import "messageController.h"
+#import "UIImage+Image.h"
 
 @interface CustomTabBarViewController ()<ZZWTabBarDelegate>
 
@@ -27,6 +28,19 @@
     [super viewDidLoad];
     [self setUpchildVC];
     [self configureZYPathButton];
+    
+    // 2.隐藏tabbar默认线条
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6)
+    {
+        [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+        UIImage* tabBarBackground = [UIImage createImageWithColor:RGB(255, 255, 255)];
+        
+        //        [UIImage imageNamed:@"tabarBackground"];
+        
+        [[UITabBar appearance] setBackgroundImage:tabBarBackground];//设置背景，修改颜色是没有用的
+        
+        [[UITabBar appearance] setSelectionIndicatorImage:tabBarBackground];
+    }
 
 }
 
