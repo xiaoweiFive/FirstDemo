@@ -106,6 +106,7 @@
 		179967841D6AB1AC006BB3BF /* ZZWGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967831D6AB1AC006BB3BF /* ZZWGlobal.m */; };
 		17B52C871D6BFAB900391A8F /* ZZWCircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */; };
 		17B52C8A1D6BFF0100391A8F /* QSCADSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C891D6BFF0100391A8F /* QSCADSplashView.m */; };
+		17B52C8C1D6C1FFF00391A8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B52C8B1D6C1FFF00391A8F /* Images.xcassets */; };
 		AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +263,7 @@
 		17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWCircleProgressButton.m; sourceTree = "<group>"; };
 		17B52C881D6BFF0100391A8F /* QSCADSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSCADSplashView.h; sourceTree = "<group>"; };
 		17B52C891D6BFF0100391A8F /* QSCADSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSCADSplashView.m; sourceTree = "<group>"; };
+		17B52C8B1D6C1FFF00391A8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.release.xcconfig"; sourceTree = "<group>"; };
 		FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhang_tabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +344,7 @@
 				174A870B1D6ADF600048EFE5 /* Assets.xcassets */,
 				1799672C1D6A94A1006BB3BF /* Supporting Files */,
 				178C80B11D65A72A0007111A /* UISounds */,
+				17B52C8B1D6C1FFF00391A8F /* Images.xcassets */,
 			);
 			path = Zhang_tabBar;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				178C80FF1D65A72A0007111A /* dtmf-7.caf in Resources */,
 				178C81041D65A72A0007111A /* end_record.caf in Resources */,
 				174A870C1D6ADF600048EFE5 /* Assets.xcassets in Resources */,
+				17B52C8C1D6C1FFF00391A8F /* Images.xcassets in Resources */,
 				178C81241D65A72A0007111A /* Tink.caf in Resources */,
 				178C80FE1D65A72A0007111A /* dtmf-6.caf in Resources */,
 				176C31461D6404060040EC60 /* LaunchScreen.storyboard in Resources */,
@@ -1032,6 +1036,7 @@
 			baseConfigurationReference = 1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1050,6 +1055,7 @@
 			baseConfigurationReference = 9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
