@@ -107,6 +107,7 @@
 		17B52C871D6BFAB900391A8F /* ZZWCircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */; };
 		17B52C8A1D6BFF0100391A8F /* QSCADSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C891D6BFF0100391A8F /* QSCADSplashView.m */; };
 		17B52C8C1D6C1FFF00391A8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B52C8B1D6C1FFF00391A8F /* Images.xcassets */; };
+		17B52CA71D6C58C500391A8F /* AddManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52CA61D6C58C500391A8F /* AddManagerView.m */; };
 		AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +265,8 @@
 		17B52C881D6BFF0100391A8F /* QSCADSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSCADSplashView.h; sourceTree = "<group>"; };
 		17B52C891D6BFF0100391A8F /* QSCADSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSCADSplashView.m; sourceTree = "<group>"; };
 		17B52C8B1D6C1FFF00391A8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17B52CA51D6C58C500391A8F /* AddManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddManagerView.h; sourceTree = "<group>"; };
+		17B52CA61D6C58C500391A8F /* AddManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddManagerView.m; sourceTree = "<group>"; };
 		1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.release.xcconfig"; sourceTree = "<group>"; };
 		FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhang_tabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -561,6 +564,7 @@
 		179967351D6A94B3006BB3BF /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				17B52CA41D6C58C500391A8F /* view */,
 				179967361D6A94B3006BB3BF /* CustomTabBarViewController.h */,
 				179967371D6A94B3006BB3BF /* CustomTabBarViewController.m */,
 				179967381D6A94B3006BB3BF /* zzwItemButton.h */,
@@ -597,6 +601,15 @@
 				17B52C891D6BFF0100391A8F /* QSCADSplashView.m */,
 			);
 			path = "AD广告";
+			sourceTree = "<group>";
+		};
+		17B52CA41D6C58C500391A8F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				17B52CA51D6C58C500391A8F /* AddManagerView.h */,
+				17B52CA61D6C58C500391A8F /* AddManagerView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		2EB02717707CDA1B29CA15EB /* Pods */ = {
@@ -872,6 +885,7 @@
 				17B52C8A1D6BFF0100391A8F /* QSCADSplashView.m in Sources */,
 				1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */,
 				179967411D6A94B3006BB3BF /* zzwTabbar.m in Sources */,
+				17B52CA71D6C58C500391A8F /* AddManagerView.m in Sources */,
 				179967071D6A9323006BB3BF /* qrinput.c in Sources */,
 				179967841D6AB1AC006BB3BF /* ZZWGlobal.m in Sources */,
 				179967271D6A9494006BB3BF /* ZZWViewController.m in Sources */,
