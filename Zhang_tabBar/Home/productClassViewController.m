@@ -9,6 +9,8 @@
 #import "productClassViewController.h"
 #import "productClassCollectionViewCell.h"
 
+#import "productClassModel.h"
+
 
 #define collectionCell @"cell"
 
@@ -16,20 +18,52 @@
 @interface productClassViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic, strong)UICollectionView *collectionView;
+@property(nonatomic, strong)NSMutableArray *mutableArray;
 
 @end
 
 @implementation productClassViewController
 
+//-(NSMutableArray *)mutableArray{
+//    if(_mutableArray==nil){
+//        _mutableArray=[NSMutableArray array];
+//    }
+//    return _mutableArray;
+//}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor greenColor];
+   
+    _mutableArray = [NSMutableArray array];
+    
+    productClassModel *model = [[productClassModel alloc]init];
+    model.imageName = @"";
+    model.iconTitle = @"re";
+    [_mutableArray addObject:model];
+    
+    
+    productClassModel *model1 = [[productClassModel alloc]init];
+    model1.imageName = @"";
+    model1.iconTitle = @"rdse";
+    [_mutableArray addObject:model1];
+    
+//    productClassModel *model2 = [[productClassModel alloc]init];
+//    model2.imageName = @"";
+//    model2.iconTitle = @"re";
+//    [_mutableArray addObject:model2];
+//    
+//    
+//    productClassModel *model3 = [[productClassModel alloc]init];
+//    model3.imageName = @"";
+//    model3.iconTitle = @"rdse";
+//    [_mutableArray addObject:model3];
+    
+    
     [self setCollectView];
-    
     [self setRightItem:@"完成"];
-
-    
-    
 }
 
 - (void)setRightItem:(NSString *)rightTitle
@@ -51,8 +85,8 @@
 - (void)setCollectView{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    _collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-    _collectionView.backgroundColor = [UIColor lightGrayColor];
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, kDeviceWidth, KDeviceHeight-64) collectionViewLayout:flowLayout];
+    _collectionView.backgroundColor = [UIColor redColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.view addSubview:_collectionView];
@@ -68,7 +102,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 100;
+    return _mutableArray.count%3 ? (_mutableArray.count/3+1)*3 : _mutableArray.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -76,8 +110,22 @@
     static NSString *identifier = collectionCell;
     productClassCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    return cell;
+    cell.iconTitle.hidden = NO;
+    cell.iconImage.hidden = NO;
+    
+    
+    if (indexPath.item >= _mutableArray.count) {
 
+        cell.iconTitle.hidden = YES;
+        cell.iconImage.hidden = YES;
+        
+        return cell;
+    }else{
+        productClassModel *model =  [_mutableArray objectAtIndex:indexPath.item];
+        [cell initWithIconTitle:model];
+    }
+    return cell;
+    
 }
 
 

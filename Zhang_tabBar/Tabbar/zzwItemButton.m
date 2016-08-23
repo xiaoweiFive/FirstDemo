@@ -42,18 +42,18 @@
         if (!title.length) {
             _backgroundImageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
         }else{
-            _backgroundImageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
-//            _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_backgroundImageView.frame), self.bounds.size.width, image.size.height/2)];
-//            _titleLable.font = [UIFont systemFontOfSize:9];
-//            _titleLable.textAlignment = NSTextAlignmentCenter;
-//            _titleLable.text = title;
-//            [self addSubview:_titleLable];
+//            _backgroundImageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+            _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_backgroundImageView.frame), self.bounds.size.width, image.size.height/2)];
+            _titleLable.font = [UIFont systemFontOfSize:9];
+            _titleLable.textAlignment = NSTextAlignmentCenter;
+            _titleLable.text = title;
+            [self addSubview:_titleLable];
         }
-        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, backgroundImage.size.height, self.bounds.size.width, 20)];
-        _titleLable.font = [UIFont systemFontOfSize:9];
-        _titleLable.textAlignment = NSTextAlignmentCenter;
-        _titleLable.text = title;
-        [self addSubview:_titleLable];
+//        _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, backgroundImage.size.height, self.bounds.size.width, 20)];
+//        _titleLable.font = [UIFont systemFontOfSize:9];
+//        _titleLable.textAlignment = NSTextAlignmentCenter;
+//        _titleLable.text = title;
+//        [self addSubview:_titleLable];
 
         [self addSubview:_backgroundImageView];
         

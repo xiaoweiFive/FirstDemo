@@ -110,11 +110,11 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    zzwPlusButton *plusBtn =  [ZZWGlobal shareQSCGlobal].plusBtn;
+//    zzwPlusButton *plusBtn =  [ZZWGlobal shareQSCGlobal].plusBtn;
 
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        plusBtn.hidden = YES;
+        [ZZWGlobal shareQSCGlobal].plusBtn.hidden = YES;
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) icon:@"nav_back" hightLightIcon:@"nav_back"];
     }
     [super pushViewController:viewController animated:animated];

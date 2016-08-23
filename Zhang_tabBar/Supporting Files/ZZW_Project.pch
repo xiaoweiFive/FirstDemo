@@ -10,6 +10,15 @@
 #ifndef ZZW_Project_pch
 #define ZZW_Project_pch
 
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIImage+Image.h"
+#import "ProgressHUD.h"
+
+#endif
+
+
 //常用宏定义·
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 #define kDeviceScale [UIScreen mainScreen].scale

@@ -40,6 +40,10 @@
                 <constraint firstAttribute="trailing" secondItem="Viw-fR-3zk" secondAttribute="trailing" id="yiH-oJ-wOY"/>
             </constraints>
             <size key="customSize" width="180" height="140"/>
+            <connections>
+                <outlet property="iconImage" destination="EJD-3T-9f5" id="D1O-8I-5Vi"/>
+                <outlet property="iconTitle" destination="Viw-fR-3zk" id="28I-pL-P82"/>
+            </connections>
             <point key="canvasLocation" x="275" y="361"/>
         </collectionViewCell>
     </objects>

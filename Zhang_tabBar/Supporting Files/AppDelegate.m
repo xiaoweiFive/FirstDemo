@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CustomTabBarViewController.h"
-
+#import "QSCADSplashView.h"
 
 @interface AppDelegate () <UITabBarControllerDelegate>
 
@@ -23,6 +23,10 @@
    
    self.tabBarVc = [[CustomTabBarViewController alloc]init];
     self.window.rootViewController = self.tabBarVc;
+    
+    
+    QSCADSplashView *splashView = [[QSCADSplashView alloc]init];
+    [splashView splashView:nil];
     
     return YES;
 }

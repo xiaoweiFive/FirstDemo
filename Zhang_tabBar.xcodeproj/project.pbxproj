@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174A870C1D6ADF600048EFE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174A870B1D6ADF600048EFE5 /* Assets.xcassets */; };
+		174A87111D6AE73D0048EFE5 /* productClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 174A87101D6AE73D0048EFE5 /* productClassModel.m */; };
 		176C31411D6404060040EC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176C313F1D6404060040EC60 /* Main.storyboard */; };
-		176C31431D6404060040EC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176C31421D6404060040EC60 /* Assets.xcassets */; };
 		176C31461D6404060040EC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176C31441D6404060040EC60 /* LaunchScreen.storyboard */; };
 		176C31511D6404060040EC60 /* Zhang_tabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C31501D6404060040EC60 /* Zhang_tabBarTests.m */; };
 		176C315C1D6404060040EC60 /* Zhang_tabBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C315B1D6404060040EC60 /* Zhang_tabBarUITests.m */; };
@@ -103,6 +104,8 @@
 		1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967481D6A957F006BB3BF /* UIImage+Image.m */; };
 		1799674E1D6A957F006BB3BF /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */; };
 		179967841D6AB1AC006BB3BF /* ZZWGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 179967831D6AB1AC006BB3BF /* ZZWGlobal.m */; };
+		17B52C871D6BFAB900391A8F /* ZZWCircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */; };
+		17B52C8A1D6BFF0100391A8F /* QSCADSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B52C891D6BFF0100391A8F /* QSCADSplashView.m */; };
 		AE80A088D771A42BEEA898A5 /* libPods-Zhang_tabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */; };
 /* End PBXBuildFile section */
 
@@ -124,9 +127,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174A870B1D6ADF600048EFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		174A870F1D6AE73D0048EFE5 /* productClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productClassModel.h; sourceTree = "<group>"; };
+		174A87101D6AE73D0048EFE5 /* productClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productClassModel.m; sourceTree = "<group>"; };
 		176C31301D6404060040EC60 /* Zhang_tabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhang_tabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C31401D6404060040EC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		176C31421D6404060040EC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176C31451D6404060040EC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176C314C1D6404060040EC60 /* Zhang_tabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zhang_tabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C31501D6404060040EC60 /* Zhang_tabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zhang_tabBarTests.m; sourceTree = "<group>"; };
@@ -253,6 +258,10 @@
 		1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 		179967821D6AB1AC006BB3BF /* ZZWGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWGlobal.h; sourceTree = "<group>"; };
 		179967831D6AB1AC006BB3BF /* ZZWGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWGlobal.m; sourceTree = "<group>"; };
+		17B52C851D6BFAB900391A8F /* ZZWCircleProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZWCircleProgressButton.h; sourceTree = "<group>"; };
+		17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZWCircleProgressButton.m; sourceTree = "<group>"; };
+		17B52C881D6BFF0100391A8F /* QSCADSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSCADSplashView.h; sourceTree = "<group>"; };
+		17B52C891D6BFF0100391A8F /* QSCADSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSCADSplashView.m; sourceTree = "<group>"; };
 		1CE3891C3868EE6C7AF67B37 /* Pods-Zhang_tabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		9B7FCED1C8171EB305D6DC34 /* Pods-Zhang_tabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhang_tabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhang_tabBar/Pods-Zhang_tabBar.release.xcconfig"; sourceTree = "<group>"; };
 		FA88892239DDD45A086926B5 /* libPods-Zhang_tabBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhang_tabBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +293,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174A870E1D6AE72E0048EFE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				174A870F1D6AE73D0048EFE5 /* productClassModel.h */,
+				174A87101D6AE73D0048EFE5 /* productClassModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		176C31271D6404060040EC60 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +327,7 @@
 		176C31321D6404060040EC60 /* Zhang_tabBar */ = {
 			isa = PBXGroup;
 			children = (
+				17B52C7E1D6BF14500391A8F /* AD广告 */,
 				179967351D6A94B3006BB3BF /* Tabbar */,
 				1799670B1D6A9477006BB3BF /* Home */,
 				179967181D6A947C006BB3BF /* fishSecond */,
@@ -319,8 +338,8 @@
 				179966EB1D6A92C1006BB3BF /* lib */,
 				179967421D6A957F006BB3BF /* Category */,
 				176C313F1D6404060040EC60 /* Main.storyboard */,
-				176C31421D6404060040EC60 /* Assets.xcassets */,
 				176C31441D6404060040EC60 /* LaunchScreen.storyboard */,
+				174A870B1D6ADF600048EFE5 /* Assets.xcassets */,
 				1799672C1D6A94A1006BB3BF /* Supporting Files */,
 				178C80B11D65A72A0007111A /* UISounds */,
 			);
@@ -461,6 +480,7 @@
 				1799670D1D6A9477006BB3BF /* HomeController.m */,
 				1799670E1D6A9477006BB3BF /* productClassViewController.h */,
 				1799670F1D6A9477006BB3BF /* productClassViewController.m */,
+				174A870E1D6AE72E0048EFE5 /* Model */,
 				179967101D6A9477006BB3BF /* view */,
 			);
 			path = Home;
@@ -563,6 +583,17 @@
 				1799674A1D6A957F006BB3BF /* UIView+LBExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		17B52C7E1D6BF14500391A8F /* AD广告 */ = {
+			isa = PBXGroup;
+			children = (
+				17B52C851D6BFAB900391A8F /* ZZWCircleProgressButton.h */,
+				17B52C861D6BFAB900391A8F /* ZZWCircleProgressButton.m */,
+				17B52C881D6BFF0100391A8F /* QSCADSplashView.h */,
+				17B52C891D6BFF0100391A8F /* QSCADSplashView.m */,
+			);
+			path = "AD广告";
 			sourceTree = "<group>";
 		};
 		2EB02717707CDA1B29CA15EB /* Pods */ = {
@@ -735,6 +766,7 @@
 				178C80F01D65A72A0007111A /* begin_record.caf in Resources */,
 				178C80FF1D65A72A0007111A /* dtmf-7.caf in Resources */,
 				178C81041D65A72A0007111A /* end_record.caf in Resources */,
+				174A870C1D6ADF600048EFE5 /* Assets.xcassets in Resources */,
 				178C81241D65A72A0007111A /* Tink.caf in Resources */,
 				178C80FE1D65A72A0007111A /* dtmf-6.caf in Resources */,
 				176C31461D6404060040EC60 /* LaunchScreen.storyboard in Resources */,
@@ -743,7 +775,6 @@
 				178C81101D65A72A0007111A /* SentMessage.caf in Resources */,
 				178C81291D65A72A0007111A /* Voicemail.caf in Resources */,
 				178C81141D65A72A0007111A /* short_low_high.caf in Resources */,
-				176C31431D6404060040EC60 /* Assets.xcassets in Resources */,
 				178C811D1D65A72A0007111A /* sms-received4.caf in Resources */,
 				178C81191D65A72A0007111A /* SIMToolkitSMS.caf in Resources */,
 				178C81281D65A72A0007111A /* vc~ringing.caf in Resources */,
@@ -834,6 +865,7 @@
 				179967061D6A9323006BB3BF /* qrencode.c in Sources */,
 				1799674C1D6A957F006BB3BF /* UIImage+Extension.m in Sources */,
 				179967341D6A94A1006BB3BF /* main.m in Sources */,
+				17B52C8A1D6BFF0100391A8F /* QSCADSplashView.m in Sources */,
 				1799674D1D6A957F006BB3BF /* UIImage+Image.m in Sources */,
 				179967411D6A94B3006BB3BF /* zzwTabbar.m in Sources */,
 				179967071D6A9323006BB3BF /* qrinput.c in Sources */,
@@ -847,6 +879,7 @@
 				179967161D6A9477006BB3BF /* productClassCollectionViewCell.m in Sources */,
 				179967401D6A94B3006BB3BF /* zzwPlusButton.m in Sources */,
 				179967321D6A94A1006BB3BF /* AppDelegate.m in Sources */,
+				174A87111D6AE73D0048EFE5 /* productClassModel.m in Sources */,
 				1799672B1D6A9499006BB3BF /* ZZWNavViewController.m in Sources */,
 				1799674B1D6A957F006BB3BF /* UIBarButtonItem+myAdd.m in Sources */,
 				179967081D6A9323006BB3BF /* qrspec.c in Sources */,
@@ -854,6 +887,7 @@
 				179967041D6A9323006BB3BF /* mask.c in Sources */,
 				1799674E1D6A957F006BB3BF /* UIView+LBExtension.m in Sources */,
 				179967151D6A9477006BB3BF /* productClassViewController.m in Sources */,
+				17B52C871D6BFAB900391A8F /* ZZWCircleProgressButton.m in Sources */,
 				179967231D6A9489006BB3BF /* meController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

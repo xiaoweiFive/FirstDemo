@@ -15,4 +15,13 @@
     // Initialization code
 }
 
+
+-(void)initWithIconTitle:(productClassModel *)model{
+    self.iconImage.image = [UIImage imageNamed:model.imageName];
+    self.iconTitle.text = model.iconTitle;
+
+}
+
+
+
 @end
