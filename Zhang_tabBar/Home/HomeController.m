@@ -40,6 +40,18 @@
 
 - (void)clickRightBtn{
     productClassViewController *productClass = [[productClassViewController alloc]init];
+    
+    /*
+       神技能  
+     
+     获取到当前页面所有导航栏对应的控制器列表，当把本页面控制器，也就是self删除的时候，push到下一个页面，则当前控制器已不存在，自然左上角按钮不会出现，这是从根本上彻底删除的方法
+     
+    NSMutableArray *mArray =[self.navigationController.viewControllers mutableCopy];
+    [mArray removeObject:self];
+    [mArray addObject:productClass];
+    [self.navigationController setViewControllers:mArray animated:YES];
+   */
+    
     [self.navigationController pushViewController:productClass animated:YES];
 }
 
